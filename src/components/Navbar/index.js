@@ -28,7 +28,7 @@ const Navbar = () => {
 
         <NavigationRight>
           <NavigationLink to="/menu">Menu</NavigationLink>
-          <NavigationLink to="/galery">Galery</NavigationLink>
+          <NavigationLink to="/gallery">Gallery</NavigationLink>
           <NavigationLink to="/events">Events</NavigationLink>
           <NavigationLink to="/contact">Contact</NavigationLink>
         </NavigationRight>
