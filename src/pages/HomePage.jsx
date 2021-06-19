@@ -1,11 +1,9 @@
 import React from "react"
 
+import HomeWrapper from "../components/HomeWrapper"
+
 const HomePage = () => {
-  return (
-    <div>
-      <h1>HOME</h1>
-    </div>
-  )
+  return <HomeWrapper />
 }
 
 export default HomePage

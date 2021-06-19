@@ -8,14 +8,14 @@ export const Navigation = styled.nav`
   align-items: center;
   justify-content: center;
   height: 100px;
-
+  margin-top: -100px;
   z-index: 10;
 `
 export const NavigationContainer = styled.nav`
   display: flex;
   align-items: center;
   height: 100px;
-  width: 1330px;
+  width: 1170px;
 `
 export const NavigationLeft = styled.div`
   display: flex;
@@ -23,7 +23,7 @@ export const NavigationLeft = styled.div`
   align-items: center;
   justify-content: space-evenly;
   height: 100%;
-  margin-right: 220px;
+  // margin-right: 110px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 `
 export const NavigationRight = styled.div`
@@ -32,6 +32,7 @@ export const NavigationRight = styled.div`
   align-items: center;
   justify-content: space-evenly;
   height: 100%;
+  margin-left: 110px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 `
 export const NavigationLink = styled(NavLink)`
@@ -40,11 +41,12 @@ export const NavigationLink = styled(NavLink)`
   font-size: 12px;
   line-height: 1.5;
 
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
+  text-transform: uppercase;
 
   &:not(:last-child) {
-    margin-right: 100px;
+    margin-right: 75px;
   }
 `
 export const NavigationLogo = styled.img`

@@ -3,8 +3,6 @@ import { createGlobalStyle } from "styled-components"
 const GlobalStyles = createGlobalStyle`
 html,
 body {
-  width: 100%;
-  height: 100vh;  
   margin: 0;
   padding: 0;
 
@@ -14,7 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 *,
@@ -34,6 +32,17 @@ img {
     height: auto
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
@@ -43,6 +52,5 @@ img {
   background-color: orangered;
   border-radius: 9em;
 }
-
 `
 export default GlobalStyles
