@@ -34,6 +34,15 @@ img {
     height: auto
 }
 
+// .logo {
+//   position: absolute;
+//   top: 25px;
+//   left: 50%;
+//   transform: translate(-50%);
+//   width: 150px;
+//   height: 150px;
+// }
+
 ::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
@@ -43,6 +52,7 @@ img {
   background-color: orangered;
   border-radius: 9em;
 }
+
 `
 
 export default GlobalStyles
