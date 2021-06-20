@@ -1,11 +1,9 @@
 import React from "react"
 
+import GalleryWrapper from "../components/Gallery"
+
 const GalleryPage = () => {
-  return (
-    <div>
-      <h1>GALLERY</h1>
-    </div>
-  )
+  return <GalleryWrapper />
 }
 
 export default GalleryPage
