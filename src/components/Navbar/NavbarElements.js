@@ -24,7 +24,6 @@ export const NavigationLeft = styled.div`
   justify-content: space-evenly;
   height: 100%;
   // margin-right: 110px;
-  // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid #aabbcc;
 `
 export const NavigationRight = styled.div`
@@ -34,7 +33,6 @@ export const NavigationRight = styled.div`
   justify-content: space-evenly;
   height: 100%;
   margin-left: 110px;
-  // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid #aabbcc;
 `
 export const NavigationLink = styled(NavLink)`

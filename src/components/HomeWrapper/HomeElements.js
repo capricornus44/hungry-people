@@ -1,12 +1,12 @@
 import styled from "styled-components"
 import { Link } from "react-router-dom"
 
-import bg from "../../assets/images/home-bg.jpg"
+import homeBg from "../../assets/images/home-bg.jpg"
 
 export const HomeSection = styled.div`
   height: 100vh;
 
-  background-image: url(${bg});
+  background-image: url(${homeBg});
   background-position: center;
   background-size: cover;
   background-repeate: no-repeate;

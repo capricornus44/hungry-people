@@ -1,11 +1,9 @@
 import React from "react"
 
+import TeamWrapper from "../components/TeamWrapper"
+
 const TeamPage = () => {
-  return (
-    <div>
-      <h1>TEAM</h1>
-    </div>
-  )
+  return <TeamWrapper />
 }
 
 export default TeamPage
