@@ -1,11 +1,9 @@
 import React from "react"
 
+import BookingWrapper from "../components/BookingWrapper"
+
 const BookingPage = () => {
-  return (
-    <div>
-      <h1>BOOKING</h1>
-    </div>
-  )
+  return <BookingWrapper />
 }
 
 export default BookingPage
