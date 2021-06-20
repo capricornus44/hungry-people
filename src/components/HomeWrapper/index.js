@@ -22,8 +22,7 @@ const HomeWrapper = () => {
         <HomeContainer>
           <HomeContent>
             <WorkTime>
-              {/* Mon - Fri:&nbsp; 8PM - 10PM,&emsp; Sat - Sun:&nbsp; 8PM - 3AM */}
-              Monday
+              <p>Mon - Fri:&nbsp; 8PM - 10PM,&nbsp; Sat - Sun:&nbsp; 8PM - 3AM</p>
             </WorkTime>
 
             <MainInfo>

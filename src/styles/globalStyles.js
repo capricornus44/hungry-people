@@ -12,7 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  // overflow: hidden;
+  overflow: hidden;
 }
 
 *,
@@ -23,13 +23,13 @@ body {
 
 ol,
 ul {
-    list-style: none
+  list-style: none
 }
 
 img {
-    display: block;
-    width: 100%;
-    height: auto
+  display: block;
+  width: 100%;
+  height: auto
 }
 
 h1,

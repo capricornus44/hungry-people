@@ -48,6 +48,10 @@ export const NavigationLink = styled(NavLink)`
   &:not(:last-child) {
     margin-right: 75px;
   }
+
+  &.active {
+    color: #e8c300;
+  }
 `
 export const NavigationLogo = styled.img`
   position: absolute;

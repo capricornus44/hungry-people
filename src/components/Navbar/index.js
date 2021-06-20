@@ -16,10 +16,18 @@ const Navbar = () => {
     <Navigation>
       <NavigationContainer>
         <NavigationLeft>
-          <NavigationLink to="/">Home</NavigationLink>
-          <NavigationLink to="/about">About</NavigationLink>
-          <NavigationLink to="/team">Team</NavigationLink>
-          <NavigationLink to="/booking">Booking</NavigationLink>
+          <NavigationLink to="/" activeClassName="active">
+            Home
+          </NavigationLink>
+          <NavigationLink to="/about" activeClassName="active">
+            About
+          </NavigationLink>
+          <NavigationLink to="/team" activeClassName="active">
+            Team
+          </NavigationLink>
+          <NavigationLink to="/booking" activeClassName="active">
+            Booking
+          </NavigationLink>
         </NavigationLeft>
 
         <NavigationLink to="/">
@@ -27,10 +35,18 @@ const Navbar = () => {
         </NavigationLink>
 
         <NavigationRight>
-          <NavigationLink to="/menu">Menu</NavigationLink>
-          <NavigationLink to="/gallery">Gallery</NavigationLink>
-          <NavigationLink to="/events">Events</NavigationLink>
-          <NavigationLink to="/contact">Contact</NavigationLink>
+          <NavigationLink to="/menu" activeClassName="active">
+            Menu
+          </NavigationLink>
+          <NavigationLink to="/gallery" activeClassName="active">
+            Gallery
+          </NavigationLink>
+          <NavigationLink to="/events" activeClassName="active">
+            Events
+          </NavigationLink>
+          <NavigationLink to="/contact" activeClassName="active">
+            Contact
+          </NavigationLink>
         </NavigationRight>
       </NavigationContainer>
     </Navigation>

@@ -29,10 +29,21 @@ export const HomeContent = styled.div`
 
   color: #ffffff;
 `
-export const WorkTime = styled.p`
-  line-height: 1;
-  white-space: nowrap;
-  transform: rotate(-90deg);
+export const WorkTime = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+
+  p {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    line-height: 1;
+    white-space: nowrap;
+  }
 `
 export const MainInfo = styled.div`
   display: flex;
