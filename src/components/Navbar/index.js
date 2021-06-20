@@ -16,7 +16,7 @@ const Navbar = () => {
     <Navigation>
       <NavigationContainer>
         <NavigationLeft>
-          <NavigationLink to="/" activeClassName="active">
+          <NavigationLink exact to="/" activeClassName="active">
             Home
           </NavigationLink>
           <NavigationLink to="/about" activeClassName="active">

@@ -2,7 +2,7 @@ import React from "react"
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa"
 
 import {
-  HomeBox,
+  HomeSection,
   HomeContainer,
   HomeContent,
   WorkTime,
@@ -18,7 +18,7 @@ import { Line } from "../shared"
 const HomeWrapper = () => {
   return (
     <>
-      <HomeBox>
+      <HomeSection>
         <HomeContainer>
           <HomeContent>
             <WorkTime>
@@ -50,7 +50,7 @@ const HomeWrapper = () => {
             </SocialLinks>
           </HomeContent>
         </HomeContainer>
-      </HomeBox>
+      </HomeSection>
     </>
   )
 }

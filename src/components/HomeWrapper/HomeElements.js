@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 import bg from "../../assets/images/home-bg.jpg"
 
-export const HomeBox = styled.div`
+export const HomeSection = styled.div`
   height: 100vh;
 
   background-image: url(${bg});

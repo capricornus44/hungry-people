@@ -24,7 +24,8 @@ export const NavigationLeft = styled.div`
   justify-content: space-evenly;
   height: 100%;
   // margin-right: 110px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid #aabbcc;
 `
 export const NavigationRight = styled.div`
   display: flex;
@@ -33,7 +34,8 @@ export const NavigationRight = styled.div`
   justify-content: space-evenly;
   height: 100%;
   margin-left: 110px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid #aabbcc;
 `
 export const NavigationLink = styled(NavLink)`
   font-family: "Open Sans", sans-serif;
@@ -41,7 +43,7 @@ export const NavigationLink = styled(NavLink)`
   font-size: 12px;
   line-height: 1.5;
 
-  color: #ffffff;
+  color: #aabbcc;
   text-decoration: none;
   text-transform: uppercase;
 
