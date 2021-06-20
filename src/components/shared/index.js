@@ -6,6 +6,7 @@ export const Line = styled.span`
   text-align: center;
   width: 60px;
   height: 5px;
+  border-radius: 5px;
 
   background-color: #e8c300;
 `

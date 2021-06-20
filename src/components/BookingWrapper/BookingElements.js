@@ -65,9 +65,12 @@ export const FormButton = styled.button`
   border-radius: 5px;
   outline: none;
 
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.67;
+
   color: #ffffff;
   text-transform: uppercase;
-
   background-color: #e8c300;
 `
 export const BookingDecoration = styled.div`
@@ -80,9 +83,4 @@ export const BookingDecoration = styled.div`
     border-radius: 8px;
     filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
   }
-`
-export const WorkInfo = styled.p`
-  font-size: 12px;
-  line-height: 1;
-  color: rgba(51, 51, 51, 0.5);
 `

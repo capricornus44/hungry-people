@@ -10,7 +10,6 @@ import {
   FormInput,
   FormButton,
   BookingDecoration,
-  WorkInfo,
 } from "./BookingElements"
 import { Line, Square } from "../shared"
 import booking from "../../assets/images/booking.jpg"
