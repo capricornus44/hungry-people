@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from "react"
 import { Route, Switch } from "react-router-dom"
-import Loader from "react-loader-spinner"
+import Spinner from "../Spinner"
 
 const HomePage = lazy(() => import("../../pages/HomePage"))
 const AboutPage = lazy(() => import("../../pages/AboutPage"))
@@ -14,11 +14,7 @@ const ContactPage = lazy(() => import("../../pages/ContactPage"))
 const Content = () => {
   return (
     <>
-      <Suspense
-        fallback={
-          <Loader className="spinner" type="ThreeDots" color="#ffd600" height={100} width={100} timeout={3000} />
-        }
-      >
+      <Suspense fallback={<Spinner />}>
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/about" component={AboutPage} />
