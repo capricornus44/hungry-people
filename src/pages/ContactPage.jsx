@@ -1,11 +1,9 @@
 import React from "react"
 
+import ContactWrapper from "../components/ContactWrapper"
+
 const ContactPage = () => {
-  return (
-    <div>
-      <h1>CONTACT</h1>
-    </div>
-  )
+  return <ContactWrapper />
 }
 
 export default ContactPage
