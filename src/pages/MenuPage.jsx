@@ -1,11 +1,9 @@
 import React from "react"
 
+import MenuWrapper from "../components/MenuWrapper"
+
 const MenuPage = () => {
-  return (
-    <div>
-      <h1>MENU</h1>
-    </div>
-  )
+  return <MenuWrapper />
 }
 
 export default MenuPage
