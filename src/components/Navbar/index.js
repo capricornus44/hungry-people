@@ -35,11 +35,11 @@ const Navbar = () => {
         </NavigationLink>
 
         <NavigationRight>
-          <NavigationLink to="/menu" activeClassName="active">
-            Menu
-          </NavigationLink>
           <NavigationLink to="/gallery" activeClassName="active">
             Gallery
+          </NavigationLink>
+          <NavigationLink to="/menu" activeClassName="active">
+            Menu
           </NavigationLink>
           <NavigationLink to="/events" activeClassName="active">
             Events

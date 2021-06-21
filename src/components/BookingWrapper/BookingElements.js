@@ -72,6 +72,7 @@ export const FormButton = styled.button`
   color: #ffffff;
   text-transform: uppercase;
   background-color: #e8c300;
+  cursor: pointer;
 `
 export const BookingDecoration = styled.div`
   position: relative;

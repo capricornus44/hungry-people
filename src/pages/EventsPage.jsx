@@ -1,11 +1,9 @@
 import React from "react"
 
+import EventsWrapper from "../components/EventsWrapper"
+
 const EventsPage = () => {
-  return (
-    <div>
-      <h1>EVENTS</h1>
-    </div>
-  )
+  return <EventsWrapper />
 }
 
 export default EventsPage
