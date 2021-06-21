@@ -40,7 +40,6 @@ export const EventsDecoration = styled.div`
     align-items: center;
     width: 80px;
     height: 475px;
-    border-radius: 5px 0px 0px 5px;
 
     font-family: "Benne", serif;
     font-size: 24px;
@@ -53,7 +52,6 @@ export const EventsDecoration = styled.div`
 
   img {
     width: 395px;
-    border-radius: 0 5px 5px 0;
     filter: drop-shadow(0px 0px 50px #000000);
   }
 `
