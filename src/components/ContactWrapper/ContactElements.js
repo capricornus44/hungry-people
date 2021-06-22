@@ -73,6 +73,7 @@ export const FormTextArea = styled.textarea`
   border: none;
   border-radius: 5px;
   outline: none;
+  resize: none;
 
   font-size: 14px;
   line-height: 1.357;
