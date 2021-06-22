@@ -101,21 +101,26 @@ export const FormButton = styled.button`
 `
 export const ContactDecoration = styled.div`
   position: relative;
-  order: 2;
   width: 475px;
   height: 475px;
-  background-color: gray;
 
-  a {
-    border-radius: 8px;
+  img {
+    border-radius: 5px;
     filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
   }
 `
-export const ContactInfo = styled.p`
+export const ContactInfo = styled.div`
+  display: flex;
+  align-items: center;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
+  color: #e8c300;
 
-  color: rgba(0, 0, 0, 0.5);
+  p {
+    margin-left: 5px;
+    margin-right: 20px;
+    color: rgba(0, 0, 0, 0.5);
+  }
 `

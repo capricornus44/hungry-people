@@ -1,4 +1,5 @@
 import React from "react"
+import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa"
 
 import {
   ContactSection,
@@ -16,6 +17,7 @@ import {
   ContactInfo,
 } from "./ContactElements"
 import { Line } from "../shared"
+import map from "../../assets/images/map.jpg"
 
 const ContactWrapper = () => {
   return (
@@ -40,11 +42,18 @@ const ContactWrapper = () => {
                 </ContactForm>
               </ContactDescription>
               <ContactDecoration>
-                <a href="https://goo.gl/maps/WStNev1zDtSTXggw5" target="_blank" rel="noreferrer"></a>
+                <a href="https://goo.gl/maps/WStNev1zDtSTXggw5" target="_blank" rel="noreferrer">
+                  <img src={map} alt="map" />
+                </a>
               </ContactDecoration>
             </MainContent>
             <ContactInfo>
-              5th London Boulevard, U.K. +40 729 131 637/+40 726 458 782 office@mindblister.com{" "}
+              <FaMapMarkerAlt />
+              <p>Mason St, Portland, USA</p>
+              <FaPhone />
+              <p>+40 729 131 637/+40 726 458 782</p>
+              <FaEnvelope />
+              <p>office@mindblister.com</p>
             </ContactInfo>
           </ContactContent>
         </ContactContainer>
