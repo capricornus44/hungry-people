@@ -12,10 +12,17 @@ export const BookingContainer = styled.div`
 `
 export const BookingContent = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   height: 100%;
   align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+`
+export const MainContent = styled.div`
+  display: flex;
+  align-items: center;
   justify-content: center;
+  margin-bottom: 100px;
 `
 export const BookingDescription = styled.div`
   flex: 1;
@@ -83,5 +90,20 @@ export const BookingDecoration = styled.div`
   img {
     border-radius: 8px;
     filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+  }
+`
+export const ContactInfo = styled.div`
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #e8c300;
+
+  p {
+    margin-left: 5px;
+    margin-right: 20px;
+    color: rgba(0, 0, 0, 0.5);
   }
 `
