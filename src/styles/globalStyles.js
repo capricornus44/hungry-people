@@ -43,6 +43,44 @@ p {
   padding: 0;
 }
 
+// ?? ========================== Slider start ==========================
+.slide {
+  display: none;
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  display: flex;
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
+
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #e8c300;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #e8c300;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+// ?? ========================== Slider end ==========================
+
+// ?? ========================== Scrollbar start =====================
 ::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
@@ -52,5 +90,6 @@ p {
   background-color: orangered;
   border-radius: 9em;
 }
+// ?? ========================== Scrollbar end =======================
 `
 export default GlobalStyles
