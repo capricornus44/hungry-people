@@ -1,6 +1,7 @@
-import React, { useRef, useCallback, useEffect } from "react"
+import React, { useState, useRef, useCallback, useEffect } from "react"
 
-import { Backdrop, ModalWrapper, ModalContent, CloseModalButton } from "./ModalElements"
+import { Backdrop, ModalWrapper, ModalImage, ModalContent, CloseModalButton } from "./ModalElements"
+import modal from "../../assets/images/modal.jpg"
 
 const Modal = ({ isSubmitted, setIsSubmitted, values }) => {
   const modalRef = useRef()
@@ -25,13 +26,22 @@ const Modal = ({ isSubmitted, setIsSubmitted, values }) => {
     <>
       {isSubmitted && (
         <Backdrop ref={modalRef} onClick={closeModal}>
-          <ModalWrapper isModalShown={isSubmitted}>
+          <ModalWrapper isSubmitted={isSubmitted}>
+            <ModalImage src={modal} alt="restaurant" />
             <ModalContent>
               <h1>Booking accepted</h1>
-              <p>{values.username}</p>
-              <p>{values.people}</p>
-              <p>{values.date}</p>
-              <p>{values.time}</p>
+              <p>
+                Reserved for: <strong>{values.username}</strong>
+              </p>
+              <p>
+                Number of persons: <strong>{values.people}</strong>
+              </p>
+              <p>
+                Date: <strong>{values.date}</strong>
+              </p>
+              <p>
+                Time: <strong>{values.time}</strong>
+              </p>
             </ModalContent>
             <CloseModalButton arial-label="close modal" onClick={() => setIsSubmitted(!isSubmitted)} />
           </ModalWrapper>

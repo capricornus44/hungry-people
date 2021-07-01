@@ -13,6 +13,7 @@ const useForm = (validate) => {
   const [values, setValues] = useState(initialState)
 
   const [errors, setErrors] = useState({})
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -26,10 +27,12 @@ const useForm = (validate) => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    setErrors(validate(values))
+    const errors = validate(values)
+    setErrors(errors)
+    setIsSubmitted(!Object.keys(errors).length)
   }
 
-  return { values, errors, handleChange, handleSubmit }
+  return { values, errors, isSubmitted, setIsSubmitted, handleChange, handleSubmit }
 }
 
 export default useForm

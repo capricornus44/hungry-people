@@ -2,6 +2,7 @@ import React from "react"
 
 import useForm from "../../hooks/useForm"
 import validate from "../../utils/validateInfo"
+import Modal from "../Modal"
 
 import {
   BookingSection,
@@ -21,7 +22,7 @@ import { Line, Square } from "../shared"
 import booking from "../../assets/images/booking.jpg"
 
 const BookingWrapper = () => {
-  const { values, errors, handleChange, handleSubmit } = useForm(validate)
+  const { values, errors, isSubmitted, setIsSubmitted, handleChange, handleSubmit } = useForm(validate)
 
   return (
     <>
@@ -37,7 +38,7 @@ const BookingWrapper = () => {
                     <FormInput
                       type="text"
                       name="username"
-                      value={values?.username}
+                      value={values.username}
                       onChange={handleChange}
                       placeholder="Name"
                     />
@@ -47,7 +48,7 @@ const BookingWrapper = () => {
                     <FormInput
                       type="email"
                       name="email"
-                      value={values?.email}
+                      value={values.email}
                       onChange={handleChange}
                       placeholder="Email"
                     />
@@ -57,7 +58,7 @@ const BookingWrapper = () => {
                     <FormInput
                       type="tel"
                       name="phone"
-                      value={values?.phone}
+                      value={values.phone}
                       onChange={handleChange}
                       placeholder="Phone"
                     />
@@ -67,7 +68,7 @@ const BookingWrapper = () => {
                     <FormInput
                       type="text"
                       name="people"
-                      value={values?.people}
+                      value={values.people}
                       onChange={handleChange}
                       placeholder="People"
                     />
@@ -77,20 +78,14 @@ const BookingWrapper = () => {
                     <FormInput
                       type="text"
                       name="date"
-                      value={values?.date}
+                      value={values.date}
                       onChange={handleChange}
                       placeholder="Date (mm/dd)"
                     />
                     {errors.date && <p>{errors.date}</p>}
                   </FormInputs>
                   <FormInputs>
-                    <FormInput
-                      type="text"
-                      name="time"
-                      value={values?.time}
-                      onChange={handleChange}
-                      placeholder="Time"
-                    />
+                    <FormInput type="text" name="time" value={values.time} onChange={handleChange} placeholder="Time" />
                     {errors.time && <p>{errors.time}</p>}
                   </FormInputs>
                   <FormButton type="submit">Book now</FormButton>
@@ -108,6 +103,7 @@ const BookingWrapper = () => {
                 <strong>+40 729 131 637/+40 726 458 782</strong>
               </p>
             </ContactInfo>
+            <Modal isSubmitted={isSubmitted} setIsSubmitted={setIsSubmitted} values={values} errors={errors} />
           </BookingContent>
         </BookingContainer>
       </BookingSection>
