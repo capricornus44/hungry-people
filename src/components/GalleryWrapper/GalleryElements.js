@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import specialtiesBg from "../../assets/images/specialties-bg.jpg"
+import specialtiesBg from "../../assets/images/gallery/specialties-bg.jpg"
 
 export const GallerySection = styled.div`
   height: 100vh;
@@ -11,6 +11,7 @@ export const GallerySection = styled.div`
   background-repeate: no-repeate;
 `
 export const GalleryContainer = styled.div`
+  display: flex;
   width: 1170px;
   height: 100%;
   margin: 0 auto;
