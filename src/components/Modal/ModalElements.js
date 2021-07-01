@@ -1,6 +1,8 @@
 import styled, { keyframes } from "styled-components"
 import { MdClose } from "react-icons/md"
 
+import modal from "../../assets/images/modal.png"
+
 export const fadeIn = keyframes`
   0% {
     opacity: 0;
@@ -17,34 +19,33 @@ export const Backdrop = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: -50px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
 `
 export const ModalWrapper = styled.div`
   position: relative;
   width: 50rem;
   height: 30rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   color: #000000;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   z-index: 100;
   animation: 0.25s ${fadeIn} ease-out;
 `
-export const ModalImage = styled.img`
-  width: 100%;
-  height: 100%;
-  border-radius: 0.625rem 0 0 0.625rem;
-`
 export const ModalContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100%;
   padding: 5rem 2rem;
-  border-radius: 0 0.625rem 0.625rem 0;
+  border-radius: 0.625rem 0.625rem 0.625rem 0.625rem;
   background-color: #ffffff;
+  background-image: url(${modal});
+  background-size: cover;
+  background-repeat: norepeat;
+  background-position: center;
 
   h1 {
+    font-size: 5rem;
     margin-bottom: 3rem;
   }
 

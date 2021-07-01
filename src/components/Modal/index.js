@@ -1,9 +1,8 @@
-import React, { useState, useRef, useCallback, useEffect } from "react"
+import React, { useRef, useCallback, useEffect } from "react"
 
-import { Backdrop, ModalWrapper, ModalImage, ModalContent, CloseModalButton } from "./ModalElements"
-import modal from "../../assets/images/modal.jpg"
+import { Backdrop, ModalWrapper, ModalContent, CloseModalButton } from "./ModalElements"
 
-const Modal = ({ isSubmitted, setIsSubmitted, values }) => {
+const Modal = ({ isSubmitted, setIsSubmitted }) => {
   const modalRef = useRef()
 
   const closeModal = (e) => {
@@ -27,21 +26,8 @@ const Modal = ({ isSubmitted, setIsSubmitted, values }) => {
       {isSubmitted && (
         <Backdrop ref={modalRef} onClick={closeModal}>
           <ModalWrapper isSubmitted={isSubmitted}>
-            <ModalImage src={modal} alt="restaurant" />
             <ModalContent>
               <h1>Booking accepted</h1>
-              <p>
-                Reserved for: <strong>{values.username}</strong>
-              </p>
-              <p>
-                Number of persons: <strong>{values.people}</strong>
-              </p>
-              <p>
-                Date: <strong>{values.date}</strong>
-              </p>
-              <p>
-                Time: <strong>{values.time}</strong>
-              </p>
             </ModalContent>
             <CloseModalButton arial-label="close modal" onClick={() => setIsSubmitted(!isSubmitted)} />
           </ModalWrapper>

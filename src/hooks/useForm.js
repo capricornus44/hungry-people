@@ -30,6 +30,7 @@ const useForm = (validate) => {
     const errors = validate(values)
     setErrors(errors)
     setIsSubmitted(!Object.keys(errors).length)
+    setValues(initialState)
   }
 
   return { values, errors, isSubmitted, setIsSubmitted, handleChange, handleSubmit }
