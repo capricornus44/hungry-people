@@ -1,5 +1,8 @@
 import React from "react"
 
+import useForm from "../../hooks/useForm"
+import validate from "../../utils/validateInfo"
+
 import {
   BookingSection,
   BookingContainer,
@@ -8,6 +11,7 @@ import {
   BookingDescription,
   BookingTitle,
   BookingForm,
+  FormInputs,
   FormInput,
   FormButton,
   BookingDecoration,
@@ -17,6 +21,8 @@ import { Line, Square } from "../shared"
 import booking from "../../assets/images/booking.jpg"
 
 const BookingWrapper = () => {
+  const { values, errors, handleChange, handleSubmit } = useForm(validate)
+
   return (
     <>
       <BookingSection>
@@ -26,13 +32,67 @@ const BookingWrapper = () => {
               <BookingDescription>
                 <BookingTitle>Book a table</BookingTitle>
                 <Line />
-                <BookingForm>
-                  <FormInput type="text" placeholder="Name" />
-                  <FormInput type="email" placeholder="Email" />
-                  <FormInput type="tel" placeholder="Phone" />
-                  <FormInput type="text" placeholder="People" />
-                  <FormInput type="text" placeholder="Date (mm/dd)" />
-                  <FormInput type="text" placeholder="Time" />
+                <BookingForm onSubmit={handleSubmit}>
+                  <FormInputs>
+                    <FormInput
+                      type="text"
+                      name="username"
+                      value={values?.username}
+                      onChange={handleChange}
+                      placeholder="Name"
+                    />
+                    {errors.username && <p>{errors.username}</p>}
+                  </FormInputs>
+                  <FormInputs>
+                    <FormInput
+                      type="email"
+                      name="email"
+                      value={values?.email}
+                      onChange={handleChange}
+                      placeholder="Email"
+                    />
+                    {errors.email && <p>{errors.email}</p>}
+                  </FormInputs>
+                  <FormInputs>
+                    <FormInput
+                      type="tel"
+                      name="phone"
+                      value={values?.phone}
+                      onChange={handleChange}
+                      placeholder="Phone"
+                    />
+                    {errors.phone && <p>{errors.phone}</p>}
+                  </FormInputs>
+                  <FormInputs>
+                    <FormInput
+                      type="text"
+                      name="people"
+                      value={values?.people}
+                      onChange={handleChange}
+                      placeholder="People"
+                    />
+                    {errors.people && <p>{errors.people}</p>}
+                  </FormInputs>
+                  <FormInputs>
+                    <FormInput
+                      type="text"
+                      name="date"
+                      value={values?.date}
+                      onChange={handleChange}
+                      placeholder="Date (mm/dd)"
+                    />
+                    {errors.date && <p>{errors.date}</p>}
+                  </FormInputs>
+                  <FormInputs>
+                    <FormInput
+                      type="text"
+                      name="time"
+                      value={values?.time}
+                      onChange={handleChange}
+                      placeholder="Time"
+                    />
+                    {errors.time && <p>{errors.time}</p>}
+                  </FormInputs>
                   <FormButton type="submit">Book now</FormButton>
                 </BookingForm>
               </BookingDescription>
