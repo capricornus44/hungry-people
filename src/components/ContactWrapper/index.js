@@ -25,7 +25,7 @@ import { Line } from "../shared"
 import map from "../../assets/images/map.jpg"
 
 const ContactWrapper = () => {
-  const { values, errors, isSubmitted, setIsSubmitted, handleChange, handleSubmit } = useForm(validate)
+  const { values, errors, handleChange, handleSubmit } = useForm(validate)
 
   return (
     <>
@@ -79,7 +79,6 @@ const ContactWrapper = () => {
                       onChange={handleChange}
                       placeholder="Message"
                     />
-                    {errors.message && <p>{errors.message}</p>}
                   </FormMessage>
                   <FormButton type="submit">Send message</FormButton>
                 </ContactForm>

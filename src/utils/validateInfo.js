@@ -33,10 +33,5 @@ export default function validateInfo(values) {
     errors.time = "Time is required"
   }
 
-  //Message
-  if (!values.message) {
-    errors.message = "Message is required"
-  }
-
   return errors
 }
