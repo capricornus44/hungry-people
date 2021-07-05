@@ -27,7 +27,7 @@ const Modal = ({ isSubmitted, setIsSubmitted }) => {
         <Backdrop ref={modalRef} onClick={closeModal}>
           <ModalWrapper isSubmitted={isSubmitted}>
             <ModalContent>
-              <h1>Booking accepted</h1>
+              <h1>Your data was sent successfully</h1>
             </ModalContent>
             <CloseModalButton arial-label="close modal" onClick={() => setIsSubmitted(!isSubmitted)} />
           </ModalWrapper>

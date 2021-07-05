@@ -34,7 +34,7 @@ export const ModalContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   height: 100%;
   padding: 5rem 2rem;
   border-radius: 0.625rem 0.625rem 0.625rem 0.625rem;
