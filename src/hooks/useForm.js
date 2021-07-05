@@ -7,6 +7,7 @@ const initialState = {
   people: "",
   date: "",
   time: "",
+  message: "",
 }
 
 const useForm = (validate) => {

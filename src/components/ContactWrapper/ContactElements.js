@@ -56,6 +56,14 @@ export const ContactForm = styled.form`
   grid-template-rows: 60px 120px 60px;
   gap: 10px 10px;
 `
+export const FormInputs = styled.div`
+  height: 100%;
+  border-radius: 5px;
+
+  p {
+    color: red;
+  }
+`
 export const FormInput = styled.input`
   text-indent: 20px;
   border: none;
