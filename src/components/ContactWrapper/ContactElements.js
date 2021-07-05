@@ -52,8 +52,8 @@ export const ContactSubtitle = styled.strong`
 `
 export const ContactForm = styled.form`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 60px 120px 60px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr 1fr;
   gap: 10px 10px;
 `
 export const FormInputs = styled.div`
@@ -61,11 +61,13 @@ export const FormInputs = styled.div`
   border-radius: 5px;
 
   p {
+    font-size: 14px;
     color: red;
   }
 `
 export const FormInput = styled.input`
-  text-indent: 20px;
+  height: 60px;
+  padding: 0 20px;
   border: none;
   border-radius: 5px;
   outline: none;
@@ -74,9 +76,20 @@ export const FormInput = styled.input`
   line-height: 1.357;
   background-color: #e5e5e5;
 `
-export const FormTextArea = styled.textarea`
+export const FormMessage = styled.div`
   grid-column: span 3;
   grid-row: 2 / 3;
+  height: 100%;
+  border-radius: 5px;
+
+  p {
+    font-size: 14px;
+    color: red;
+  }
+`
+export const FormTextArea = styled.textarea`
+  height: 120px;
+  width: 100%;
   padding: 20px 20px;
   border: none;
   border-radius: 5px;
@@ -93,7 +106,7 @@ export const FormButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  //   height: 60px;
+  height: 60px;
   padding: 0 20px;
   border: none;
   border-radius: 5px;

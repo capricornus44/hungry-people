@@ -15,6 +15,7 @@ import {
   ContactForm,
   FormInputs,
   FormInput,
+  FormMessage,
   FormTextArea,
   FormButton,
   ContactDecoration,
@@ -70,7 +71,7 @@ const ContactWrapper = () => {
                     />
                     {errors.phone && <p>{errors.phone}</p>}
                   </FormInputs>
-                  <FormInputs>
+                  <FormMessage>
                     <FormTextArea
                       type="text"
                       name="message"
@@ -79,7 +80,7 @@ const ContactWrapper = () => {
                       placeholder="Message"
                     />
                     {errors.message && <p>{errors.message}</p>}
-                  </FormInputs>
+                  </FormMessage>
                   <FormButton type="submit">Send message</FormButton>
                 </ContactForm>
               </ContactDescription>
