@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components/macro"
 
 import teamBg from "../../assets/images/team/team-bg.jpg"
 
@@ -61,4 +61,32 @@ export const TeamDecoration = styled.div`
     border-radius: 5px;
     filter: drop-shadow(0px 0px 50px #000000);
   }
+`
+const SlideBtnStyles = css`
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  font-size: 3rem;
+  color: #e8c300;
+  background-color: transparent;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+`
+export const NextSlideBtn = styled.button`
+  ${SlideBtnStyles}
+  right: 32px;
+  transform: translate(50%, -50%);
+`
+export const PrevSlideBtn = styled.button`
+  ${SlideBtnStyles}
+  left: 32px;
+  transform: translate(-50%, -50%);
 `

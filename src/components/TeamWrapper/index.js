@@ -1,6 +1,5 @@
 import React, { useState } from "react"
-import { MdKeyboardArrowRight } from "react-icons/md"
-import { MdKeyboardArrowLeft } from "react-icons/md"
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md"
 
 import {
   TeamSection,
@@ -11,10 +10,11 @@ import {
   TeamSubtitle,
   TeamText,
   TeamDecoration,
+  NextSlideBtn,
+  PrevSlideBtn,
 } from "./TeamElements"
-import { Line, Square } from "../shared"
-import SliderButton from "../shared/SliderButton"
 
+import { Line, Square } from "../shared"
 import teamDB from "../../db/teamDB"
 
 const TeamWrapper = () => {
@@ -57,8 +57,12 @@ const TeamWrapper = () => {
           ))}
         </TeamContainer>
 
-        <SliderButton Icon={MdKeyboardArrowRight} moveSlide={nextSlide} direction="next" />
-        <SliderButton Icon={MdKeyboardArrowLeft} moveSlide={prevSlide} direction="prev" />
+        <NextSlideBtn onClick={nextSlide}>
+          <MdKeyboardArrowRight fontSize="40" />
+        </NextSlideBtn>
+        <PrevSlideBtn onClick={prevSlide}>
+          <MdKeyboardArrowLeft fontSize="40" />
+        </PrevSlideBtn>
       </TeamSection>
     </>
   )

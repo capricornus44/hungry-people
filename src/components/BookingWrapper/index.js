@@ -1,4 +1,5 @@
 import React from "react"
+import { FaClock, FaPhone, FaEnvelope } from "react-icons/fa"
 
 import useForm from "../../hooks/useForm"
 import validate from "../../utils/validateInfo"
@@ -97,11 +98,14 @@ const BookingWrapper = () => {
               </BookingDecoration>
             </MainContent>
             <ContactInfo>
+              <FaClock />
               <p>
                 Mon - Fri:&nbsp;<strong>8PM - 10PM</strong>,&nbsp; Sat - Sun:&nbsp;<strong>8PM - 3AM</strong>
-                ,&nbsp;Phone:&nbsp;
-                <strong>+40 729 131 637/+40 726 458 782</strong>
               </p>
+              <FaPhone />
+              <p>+40 729 131 637/+40 726 458 782</p>
+              <FaEnvelope />
+              <p>office@mindblister.com</p>
             </ContactInfo>
             <Modal isSubmitted={isSubmitted} setIsSubmitted={setIsSubmitted} values={values} errors={errors} />
           </BookingContent>
