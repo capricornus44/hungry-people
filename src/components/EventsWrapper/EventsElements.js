@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import specialtiesBg from "../../assets/images/gallery/specialties-bg.jpg"
+import specialtiesBg from "../../assets/images/events/specialties-bg.jpg"
 
 export const EventsSection = styled.div`
   height: 100vh;

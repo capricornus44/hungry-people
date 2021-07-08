@@ -9,8 +9,8 @@ import {
   EventsContactInfo,
 } from "./EventsElements"
 import { Square } from "../shared"
-import weddings from "../../assets/images/events-1.jpg"
-import corporatives from "../../assets/images/events-2.jpg"
+import weddings from "../../assets/images/events/events-1.jpg"
+import corporatives from "../../assets/images/events//events-2.jpg"
 
 const EventsWrapper = () => {
   return (
