@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const BookingSection = styled.div`
   height: 100vh;
+  padding-top: 100px;
   background-color: #ffffff;
 `
 export const BookingContainer = styled.div`

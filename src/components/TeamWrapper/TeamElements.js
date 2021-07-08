@@ -4,7 +4,7 @@ import teamBg from "../../assets/images/team/team-bg.jpg"
 
 export const TeamSection = styled.div`
   height: 100vh;
-
+  padding-top: 100px;
   background-image: url(${teamBg});
   background-position: center;
   background-size: cover;

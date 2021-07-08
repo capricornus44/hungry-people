@@ -4,7 +4,7 @@ import specialtiesBg from "../../assets/images/events/specialties-bg.jpg"
 
 export const EventsSection = styled.div`
   height: 100vh;
-
+  padding-top: 100px;
   background-image: url(${specialtiesBg});
   background-position: center;
   background-size: cover;

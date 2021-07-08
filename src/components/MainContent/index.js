@@ -9,7 +9,7 @@ const BookingPage = lazy(() => import("../../pages/BookingPage"))
 const MenuPage = lazy(() => import("../../pages/MenuPage"))
 const EventsPage = lazy(() => import("../../pages/EventsPage"))
 
-const Content = () => {
+const MainContent = () => {
   return (
     <>
       <Suspense fallback={<Spinner />}>
@@ -26,4 +26,4 @@ const Content = () => {
   )
 }
 
-export default Content
+export default MainContent

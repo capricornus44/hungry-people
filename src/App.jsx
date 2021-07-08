@@ -2,13 +2,13 @@ import React from "react"
 
 import GlobalStyles from "./styles/globalStyles"
 import Navbar from "./components/Navbar"
-import Content from "./components/Content"
+import MainContent from "./components/MainContent"
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <Content />
+      <MainContent />
       <GlobalStyles />
     </div>
   )

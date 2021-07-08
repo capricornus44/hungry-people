@@ -5,7 +5,7 @@ import homeBg from "../../assets/images/home-bg.jpg"
 
 export const HomeSection = styled.div`
   height: 100vh;
-
+  padding-top: 100px;
   background-image: url(${homeBg});
   background-position: center;
   background-size: cover;
